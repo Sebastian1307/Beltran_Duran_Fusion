@@ -8,7 +8,7 @@ public class MatchManager : NetworkBehaviour
     public TextMeshProUGUI playerWinnerName;
     public void EndMatch(PlayerRef winner)
     {
-        Debug.Log($"GANÓ EL JUGADOR {winner}");
+        Debug.Log($"Player winner is: {winner}");
         playerWinnerName.text = winner.ToString();
         panelEndGame.SetActive( true );
 
